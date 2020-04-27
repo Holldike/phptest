@@ -10,17 +10,7 @@ class SignUpController extends \Controller
 {
     public function indexAction()
     {
-        $person = [
-            'name' => '',
-            'email' => '',
-            'region' => '',
-            'city' => '',
-            'area' => '',
-        ];
-
-        $this->view->data['person'] = $person;
         $this->view->data['regions'] = (new Territory())->getRegions();
-
         $this->view->assets['css'][] = '/assets/css/signUp/index.css';
         $this->view->assets['js'][] = '/assets/js/signUp/index.js';
 

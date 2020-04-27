@@ -2,16 +2,16 @@
     <form method="post">
         <label id="name">
             <span class="title">ФИО</span>
-            <input name="name" type="text" placeholder="ФИО" value="<?= $this->data['person']['name']?>">
+            <input name="name" type="text" placeholder="ФИО" value="">
         </label>
         <label id="email">
             <span class="title">E-mail</span>
-            <input name="email" type="text" placeholder="E-mail" value="<?= $this->data['person']['email']?>">
+            <input name="email" type="text" placeholder="E-mail" value="">
         </label>
         <label id="region">
             <span class="title">Область</span>
             <select name="region">
-                <option value="" selected>Не выбран</option>
+                <option value="" selected >Не выбран</option>
                 <?php foreach ($this->data['regions'] as $region) { ?>
                     <option value="<?= $region['reg_id'] ?>"><?= $region['ter_name'] ?></option>
                 <?php } ?>
