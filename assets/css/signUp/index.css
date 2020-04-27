@@ -1,0 +1,52 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: #eee6e6;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px;
+}
+
+label .title {
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    border: 2px solid #a19c9c;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+label .error {
+    display: block;
+}
+
+.error_box {
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #efc8c8;
+    font-size: small;
+    padding: 5px;
+}
+
+.error_item {
+    display: block;
+}
+button {
+    width: 100%;
+}
+
+.person {
+    padding: 5px;
+    border: 2px solid #eee6e6;
+    border-radius: 5px;
+    background-color: #ecd7d7;
+}
